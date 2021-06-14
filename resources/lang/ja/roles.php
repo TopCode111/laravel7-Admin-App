@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Roles Language Lines
@@ -12,6 +13,6 @@ return [
     |
     */
 
-    'administrator' => 'Administrator',
-    'user' => 'User',
+    'administrator' => '管理者',
+    'user' => 'ユーザ',
 ];

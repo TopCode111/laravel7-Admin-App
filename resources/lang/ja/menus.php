@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Menus Language Lines
@@ -14,126 +15,49 @@ return [
 
     'backend' => [
         'access' => [
-            'title' => 'Access',
+            'title' => 'アクセス管理',
 
             'roles' => [
-                'all' => 'All Roles',
-                'create' => 'Create Role',
-                'edit' => 'Edit Role',
-                'management' => 'Role Management',
-                'main' => 'Roles',
+                'all' => '全ロール',
+                'create' => 'ロール作成',
+                'edit' => 'ロール編集',
+                'management' => 'ロール管理',
+                'main' => 'ロール',
             ],
 
             'users' => [
-                'all' => 'All Users',
-                'active' => 'Active Users',
-                'change-password' => 'Change Password',
-                'create' => 'Create User',
-                'deactivated' => 'Deactivated Users',
-                'deleted' => 'Deleted Users',
-                'edit' => 'Edit User',
-                'main' => 'Users',
-                'view' => 'View User',
-            ],
-
-            'permissions' => [
-                'all' => 'All Permissions',
-                'create' => 'Create Permission',
-                'deactivated' => 'Deactivated Permission',
-                'deleted' => 'Deleted Permissions',
-                'edit' => 'Edit Permission',
-                'main' => 'Permissions',
-                'view' => 'View Permission',
-                'management' => 'Permission Management',
-            ],
-
-            'pages' => [
-                'all' => 'All Pages',
-                'active' => 'Active Pages',
-                'create' => 'Create Page',
-                'deactivated' => 'Deactivated Pages',
-                'deleted' => 'Deleted Pages',
-                'edit' => 'Edit Page',
-                'main' => 'Pages',
-                'view' => 'View Page',
-            ],
-
-            'blogs' => [
-                'all' => 'All Blogs',
-                'active' => 'Active Blogs',
-                'create' => 'Create Blog',
-                'deactivated' => 'Deactivated Blogs',
-                'deleted' => 'Deleted Blogs',
-                'edit' => 'Edit Blog',
-                'main' => 'Blogs',
-                'view' => 'View Blog',
-            ],
-
-            'blog-categories' => [
-                'all' => 'All Blog Categories',
-                'active' => 'Active Blog Categories',
-                'create' => 'Create Blog Category',
-                'deactivated' => 'Deactivated Blog Categories',
-                'deleted' => 'Deleted Blog Categories',
-                'edit' => 'Edit Blog Category',
-                'main' => 'Blog Categories',
-                'view' => 'View Blog Category',
-            ],
-
-            'blog-tags' => [
-                'all' => 'All Blog Tags',
-                'active' => 'Active Blog Tags',
-                'create' => 'Create Blog Tag',
-                'deactivated' => 'Deactivated Blog Tags',
-                'deleted' => 'Deleted Blog Tags',
-                'edit' => 'Edit Blog Tag',
-                'main' => 'Blog Tags',
-                'view' => 'View Blog Tag',
-            ],
-
-            'faqs' => [
-                'all' => 'All Faqs',
-                'active' => 'Active Faqs',
-                'create' => 'Create Faq',
-                'deactivated' => 'Deactivated Faqs',
-                'deleted' => 'Deleted Faqs',
-                'edit' => 'Edit Faq',
-                'main' => 'Blog Faqs',
-                'view' => 'View Faq',
-            ],
-
-            'email-templates' => [
-                'all' => 'All Email Templates',
-                'active' => 'Active Email Templates',
-                'create' => 'Create Email Template',
-                'deactivated' => 'Deactivated Email Templates',
-                'deleted' => 'Deleted Email Templates',
-                'edit' => 'Edit Email Template',
-                'main' => 'Blog Email Templates',
-                'view' => 'View Email Template',
+                'all' => '全ユーザ',
+                'active' => 'アクテイブ',
+                'change-password' => 'パスワード変更',
+                'create' => 'ユーザ作成',
+                'deactivated' => 'ユーザ非アクティブ',
+                'deleted' => '削除済のユーザ',
+                'edit' => 'ユーザ編集',
+                'main' => 'ユーザ',
+                'view' => 'ユーザ表示',
             ],
         ],
 
         'log-viewer' => [
-            'main' => 'Log Viewer',
+            'main' => 'Log表示',
             'dashboard' => 'Dashboard',
             'logs' => 'Logs',
         ],
 
         'sidebar' => [
             'dashboard' => 'Dashboard',
-            'general' => 'General',
+            'general' => '一般',
             'history' => 'History',
-            'system' => 'System',
-            'blogs' => 'Blog Management',
-            'pages' => 'Pages Management',
-            'faqs' => 'Faq Management',
-            'email-templates' => 'Email Templates',
+            'system' => 'システム',
+            'blogs' => 'ブログ管理',
+            'pages' => 'ページ管理',
+            'faqs' => 'Faq管理',
+            'email-templates' => 'Emailテンプレート',
         ],
     ],
 
     'language-picker' => [
-        'language' => 'Language',
+        'language' => '言語',
         /*
          * Add the new language to this array.
          * The key should have the same language code as the folder name.
@@ -141,8 +65,24 @@ return [
          * Be sure to add the new language in alphabetical order.
          */
         'langs' => [
-            'ar' => 'عربى (Arabic)',
-            'en' => 'English',
+            'ar'    => 'アラビア語（Arabic）',
+            'zh'    => '中国語（Chinese Simplified）',
+            'zh-TW' => '中国語（Chinese Traditional）',
+            'da'    => 'デンマーク語（Danish）',
+            'de'    => 'ドイツ人（German）',
+            'el'    => 'ギリシャ語（Greek）',
+            'en'    => '英語（English）',
+            'es'    => 'スペイン語（Spanish）',
+            'fr'    => 'フランス語（French）',
+            'id'    => 'インドネシア語（Indonesian）',
+            'it'    => 'イタリア語（Italian）',
+            'ja'    => '日本語（Japanese）',
+            'nl'    => 'オランダ語（Dutch）',
+            'pt_BR' => 'ブラジルポルトガル語（Brazilian Portuguese）',
+            'ru'    => 'ロシア語（Russian）',
+            'sv'    => 'スウェーデン語（Swedish）',
+            'th'    => 'タイ語（Thai）',
+            'tr'    => '(Turkish)',
         ],
     ],
 ];

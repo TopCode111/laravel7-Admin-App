@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Buttons Language Lines
@@ -15,41 +16,38 @@ return [
     'backend' => [
         'access' => [
             'users' => [
-                'activate' => 'Activate',
-                'change_password' => 'Change Password',
-                'clear_session' => 'Clear Session',
-                'confirm' => 'Confirm',
-                'deactivate' => 'Deactivate',
+                'activate' => '活動化する',
+                'change_password' => 'パスワードの変更',
+                'deactivate' => '非アクティブ',
                 'delete_permanently' => 'Delete Permanently',
-                'login_as' => 'Login As :user',
-                'resend_email' => 'Resend Confirmation E-mail',
-                'restore_user' => 'Restore User',
-                'unconfirm' => 'Un-confirm',
-                'unlink' => 'Unlink',
+                'login_as' => 'ログインされたユーザー',
+                'resend_email' => '再確認メール',
+                'restore_user' => 'ユーザーの復元',
+                'unconfirm'             => '未確認',
+                'unlink' => '未リンク',
             ],
         ],
     ],
 
     'emails' => [
         'auth' => [
-            'confirm_account' => 'Confirm Account',
-            'reset_password' => 'Reset Password',
+            'confirm_account' => 'アカウントの確認',
+            'reset_password' => 'パスワードのリセット',
         ],
     ],
 
     'general' => [
-        'cancel' => 'Cancel',
-        'continue' => 'Continue',
+        'cancel' => 'キャンセル',
 
         'crud' => [
-            'create' => 'Create',
-            'delete' => 'Delete',
-            'edit' => 'Edit',
-            'update' => 'Update',
-            'view' => 'View',
+            'create' => '作成',
+            'delete' => '削除',
+            'edit' => '編集',
+            'update' => '更新',
+            'view' => '表示',
         ],
 
-        'save' => 'Save',
-        'view' => 'View',
+        'save' => '保存',
+        'view' => '表示',
     ],
 ];

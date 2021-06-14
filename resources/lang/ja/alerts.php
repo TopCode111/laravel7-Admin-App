@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Alert Language Lines
@@ -15,67 +16,31 @@ return [
     'backend' => [
         'access' => [
             'roles' => [
-                'created' => 'The role was successfully created.',
-                'updated' => 'The role was successfully updated.',
-                'deleted' => 'The role was successfully deleted.',
+                'created' => 'ロールが正常に作成されました。',
+                'deleted' => 'ロールが削除されました。',
+                'updated' => 'ロールが正常に更新されました。',
             ],
 
             'permissions' => [
-                'created' => 'The permission was successfully created.',
-                'updated' => 'The permission was successfully updated.',
-                'deleted' => 'The permission was successfully deleted.',
+                'created' => '権限が正常に作成されました。',
+                'updated' => '権限が正常に更新されました。',
+                'deleted' => '権限が削除されました。',
             ],
 
             'users' => [
-                'created' => 'The user was successfully created.',
-                'updated' => 'The user was successfully updated.',
-                'deleted' => 'The user was successfully deleted.',
-                'deleted_permanently' => 'The user was deleted permanently.',
-                'restored' => 'The user was successfully restored.',
                 'cant_resend_confirmation' => 'The application is currently set to manually approve users.',
-                'confirmation_email' => 'A new confirmation e-mail has been sent to the address on file.',
-                'confirmed' => 'The user was successfully confirmed.',
-                'session_cleared' => "The user's session was successfully cleared.",
-                'social_deleted' => 'Social Account Successfully Removed',
+                'confirmation_email' => '新しい確認メールがファイルのアドレスに送信されました。',
+                'confirmed'              => 'ユーザーが成功裏に確認された。',
                 'unconfirmed' => 'The user was successfully un-confirmed',
-                'updated_password' => "The user's password was successfully updated.",
+                'created' => 'ユーザーが正常に作成されました。',
+                'deleted' => 'ユーザーが削除されました。',
+                'deleted_permanently' => 'ユーザーが完全に削除されました。',
+                'restored' => 'ユーザーが正常に復元されました。',
+                'updated' => 'ユーザーが正常に更新されました。',
+                'updated_password' => 'ユーザーのパスワードが正常に更新されました。',
+                'session_cleared' => "The user's session was successfully cleared.",
+                'social_deleted' => 'SNS削除されました。',
             ],
-        ],
-
-        'blogs' => [
-            'created' => 'The blog was successfully created.',
-            'updated' => 'The blog was successfully updated.',
-            'deleted' => 'The blog was successfully deleted.',
-        ],
-
-        'blog-category' => [
-            'created' => 'The blog category was successfully created.',
-            'updated' => 'The blog category was successfully updated.',
-            'deleted' => 'The blog category was successfully deleted.',
-        ],
-
-        'blog-tags' => [
-            'created' => 'The blog tag was successfully created.',
-            'updated' => 'The blog tag was successfully updated.',
-            'deleted' => 'The blog tag was successfully deleted.',
-        ],
-
-        'pages' => [
-            'created' => 'The page was successfully created.',
-            'updated' => 'The page was successfully updated.',
-            'deleted' => 'The page was successfully deleted.',
-        ],
-
-        'faqs' => [
-            'created' => 'The faq was successfully created.',
-            'updated' => 'The faq was successfully updated.',
-            'deleted' => 'The faq was successfully deleted.',
-        ],
-
-        'email-templates' => [
-            'created' => 'The email template was successfully created.',
-            'updated' => 'The email template was successfully updated.',
-            'deleted' => 'The email template was successfully deleted.',
         ],
     ],
 

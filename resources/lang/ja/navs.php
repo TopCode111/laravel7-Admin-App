@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Navs Language Lines
@@ -14,22 +15,22 @@ return [
 
     'general' => [
         'home' => 'ホーム',
-        'logout' => 'Logout',
+        'logout' => 'ログアウト',
     ],
 
     'frontend' => [
         'contact' => 'Contact',
         'dashboard' => 'Dashboard',
         'login' => 'ログイン',
-        'macros' => 'Macros',
-        'register' => 'Register',
+        'macros' => 'マクロ',
+        'register' => '登録',
 
         'user' => [
             'account' => 'My Account',
-            'administration' => 'Administration',
-            'change_password' => 'Change Password',
+            'administration' => '管理',
+            'change_password' => 'パスワード変更',
             'my_information' => 'My Information',
-            'profile' => 'Profile',
+            'profile' => 'プロフィール',
         ],
     ],
 ];
