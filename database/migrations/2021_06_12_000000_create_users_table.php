@@ -28,6 +28,9 @@ class CreateUsersTable extends Migration
             $table->string('confirmation_code')->nullable();
             $table->boolean('confirmed')->default(config('access.users.confirm_email') ? false : true);
             $table->string('timezone')->nullable();
+            $table->string('profession')->nullable();
+            $table->string('country')->nullable();
+            $table->text('self_introduction', 65535)->nullable();
             $table->timestamp('last_login_at')->nullable();
             $table->string('last_login_ip')->nullable();
             $table->boolean('to_be_logged_out')->default(false);
