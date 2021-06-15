@@ -22,8 +22,8 @@ trait ModelAttributes
     public function getDeleteButtonAttribute($permission, $route)
     {
         if (access()->allow($permission)) {
-            return '<a href="'.route($route, $this).'" 
-                    class="btn btn-primary btn-danger btn-sm" 
+            return '<a href="'.route($route, $this).'"
+                    class="btn btn-primary btn-danger btn-sm"
                     data-method="delete"
                     data-trans-button-cancel="'.trans('buttons.general.cancel').'"
                     data-trans-button-confirm="'.trans('buttons.general.crud.delete').'"

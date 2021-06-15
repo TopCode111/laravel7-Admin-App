@@ -138,7 +138,7 @@ trait UserAttributes
     public function getShowButtonAttribute($class)
     {
         if (access()->allow('show-user')) {
-            return '<a class="'.$class.'" data-toggle="tooltip" data-placement="top" href="'.route('admin.auth.user.show', $this).'" title="'.trans('buttons.general.crud.view').'"> 
+            return '<a class="'.$class.'" data-toggle="tooltip" data-placement="top" href="'.route('admin.auth.user.show', $this).'" title="'.trans('buttons.general.crud.view').'">
                     <i class="fa fa-eye"></i>
                 </a>';
         }
@@ -250,7 +250,7 @@ trait UserAttributes
                         <li>'.$this->getStatusButtonAttribute('').'</li>
                         <li>'.$this->getClearSessionButtonAttribute('').'</li>
                         <li>'.$this->getDeleteButtonAttribute('').'</li>
-                        
+
                         </ul>
                     </div>';
 
@@ -280,8 +280,8 @@ trait UserAttributes
      */
     public function getDeletePermanentlyButtonAttribute($class)
     {
-        return '<a class="'.$class.'" href="'.route('admin.auth.user.delete-permanently', $this).'" 
-        data-method="delete" 
+        return '<a class="'.$class.'" href="'.route('admin.auth.user.delete-permanently', $this).'"
+        data-method="delete"
         data-trans-button-confirm="'.trans('buttons.general.crud.delete').'"
         data-trans-title="'.trans('strings.backend.general.are_you_sure').'"
         ><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.delete_permanently').'"></i></a> ';
@@ -305,7 +305,7 @@ trait UserAttributes
                     '.$this->getShowButtonAttribute('btn btn-success btn-sm').'
                     '.$this->getEditButtonAttribute('btn btn-primary btn-sm').'
                     '.$this->getChangePasswordButtonAttribute('btn btn-secondary btn-sm').'
-                    '.$this->checkAdmin().'    
+                    '.$this->checkAdmin().'
                 </div>';
         }
         $userPermission = $this->getUserPermission();
