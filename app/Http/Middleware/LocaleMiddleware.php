@@ -26,10 +26,10 @@ class LocaleMiddleware
             app()->setLocale(session()->get('locale'));
 
             // setLocale for php. Enables ->formatLocalized() with localized values for dates
-            setlocale(LC_TIME, config('locale.languages')[session()->get('locale')][1]);
+            setlocale(LC_TIME, config('locale.languages')[session()->get('locale')][0]);
 
             // setLocale to use Carbon source locales. Enables diffForHumans() localized
-            Carbon::setLocale(config('locale.languages')[session()->get('locale')][0]);
+            Carbon::setLocale(config('locale.languages')[session()->get('locale')][1]);
 
             /*
              * Set the session variable for whether or not the app is using RTL support

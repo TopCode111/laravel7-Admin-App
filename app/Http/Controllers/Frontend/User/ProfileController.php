@@ -36,7 +36,7 @@ class ProfileController extends Controller
     {
         $output = $this->userRepository->update(
             $request->user(),
-            $request->only('first_name', 'last_name', 'email', 'avatar_type', 'avatar_location'),
+            $request->only('first_name', 'last_name', 'email', 'profession', 'country', 'self_introduction', 'avatar_type', 'avatar_location'),
             $request->has('avatar_location') ? $request->file('avatar_location') : false
         );
 
