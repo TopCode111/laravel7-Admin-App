@@ -31,19 +31,5 @@ Route::group(['namespace' => 'Api\V1', 'prefix' => 'v1', 'as' => 'v1.'], functio
             Route::get('me', 'AuthController@me');
         });
 
-        // Page
-        Route::apiResource('pages', 'PagesController');
-
-        // Faqs
-        Route::apiResource('faqs', 'FaqsController');
-
-        // Blog Categories
-        Route::apiResource('blog-categories', 'BlogCategoriesController');
-
-        // Blog Tags
-        Route::apiResource('blog-tags', 'BlogTagsController');
-
-        // Blogs
-        Route::apiResource('blogs', 'BlogsController');
     });
 });
